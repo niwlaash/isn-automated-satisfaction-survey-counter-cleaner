@@ -1,0 +1,81 @@
+Athletics / Olahraga
+Body Building / Bina Badan
+Cycling / Berbasikal
+Duathlon / Duathlon
+Triathlon / Triathlon
+Weightlifitng / Angkat Berat
+Basketball / Bola Keranjang
+Cricket / Kriket
+Field Hockey / Hoki Padang
+Football / Bola Sepak
+Floorball
+Netball / Bola Jaring
+Rugby 7s / Ragbi 7s
+Hockey Indoor /  Hoki Dewan
+Hockey 5s /  Hoki 5s
+Sepak Takraw / Sepak Takraw
+Rugby 7s / Ragbi 7s
+Volleyball / Bola Tampar
+Badminton / Badminton
+Squash / Skuasy
+Tennis /  Tenis
+Table Tennis / Ping Pong
+Archery / Memanah
+Artistic Gymnastics / Gimnastik Artistik
+Bowling / Boling
+Lawn Bowl / Boling Padang
+E-sport / E-sukan
+Equestrian
+Golf
+Ice Skating / Luncur Ais
+Lawn Bowl / Boling Padang
+Petanque / Petanque
+Rhythmic Gymnastics / Gimnastik Berirama
+Shooting / Menembak
+Snooker & Billiard
+Boxing / Tinju
+Fencing / Lawan Pedang
+Judo / Judo
+Jujitsu / Jujitsu
+Karate / Karate
+Kickboxing / Kickboxing
+Muay Thai / Muay Thai
+Silat / Silat
+Taekwondo / Taekwondo
+Wushu / Wushu
+Diving / Terjun
+Sailing / Pelayaran
+Waterski / Ski Air
+Swimming / Renang
+Boccia / Boccia
+Para Archery / Para Memanah
+Para Athletics / Para Olahraga
+Para Badminton / Para Badminton
+Para Cycling / Para Berbasikal
+Para Powerlifting / Para Powerlifting
+Para Shooting / Para Menembak
+Para Swimming / Para Renang
+Para Table Tennis / Para Ping pong
+Para Taekwondo / Para Taekwondo
+Para Tenpin Bowling / Para Tenpin Boling
+WC Basketball / Bola Keranjang Berkerusi Roda
+WC Fencing / Lawan Pedang Berkerusi Roda
+WC Tennis / Tenis Berkerusi Roda
+
+i want you to create a output of processed survey update in the form like this:
+
+| PK Done | Podium Done | RTG Done | Sukan Berfasa Done | Total Athletes Responded | PK Coach | Podium Coach | RTG Coach | Sukan Berfasa Coach | Total Coaches Responded | TOTAL RESPONDENT |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+based on the list of sports above, and the input file D:\SideProject\SatisfactionSurvey_ResponseCounter\2026 ISN PART 1_ Athletes and Coaches Satisfaction Survey on Sports Science & Sports Medicine Services (Responses).xlsx
+
+create a python script to count the number of athletes and coaches for each sport and fill in the output file D:\SideProject\SatisfactionSurvey_ResponseCounter\1. Responses Update - ISN Satisfaction Survey 2026.xlsx
+
+if the data column sport is others (include column 'if others pls specify') in different sheet, so i can review the count myself with the list of sports above.
+
+review these xlsx file and create the structure so every thing will be simple automation process that i can copy and paste to the D:\SideProject\SatisfactionSurvey_ResponseCounter\1. Responses Update - ISN Satisfaction Survey 2026.xlsx or i can directly transfer to the google sheet online.
+
+let me review your recommendation and coding strcuture that it will be cleaned and easy to maintain.
+
+create the guide for it too and documentation for easier legacy
