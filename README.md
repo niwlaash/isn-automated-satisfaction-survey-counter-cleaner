@@ -1,4 +1,4 @@
-# ISN Satisfaction Survey Response Counter
+# ISN Automated Satisfaction Survey Response Counter
 
 This tool automates the process of counting and categorizing responses from the **2026 Athletes and Coaches Satisfaction Survey**. It maps raw survey data into a clean, flat table ready for review and analysis.
 
