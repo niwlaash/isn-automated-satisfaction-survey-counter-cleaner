@@ -91,13 +91,20 @@ def process_survey():
     df_input['Final_Sport'] = df_input.apply(get_final_sport, axis=1)
     df_input['Norm_Sport'] = df_input['Final_Sport'].apply(normalize_name)
     
-    program_map = {
-        'Pelapis Kebangsaan': 'PK',
-        'Podium': 'Podium',
-        'Road To Gold (RTG)': 'RTG',
-        'Sukan Berfasa': 'Sukan Berfasa'
-    }
-    df_input['Program_Mapped'] = df_input[col_prog].map(program_map).fillna('Others')
+    def map_program(prog):
+        if pd.isna(prog): return 'Others'
+        prog_lower = str(prog).strip().lower()
+        if 'berfasa' in prog_lower:
+            return 'Sukan Berfasa'
+        if 'pelapis' in prog_lower or 'pk' in prog_lower:
+            return 'PK'
+        if 'podium' in prog_lower:
+            return 'Podium'
+        if 'road to gold' in prog_lower or 'rtg' in prog_lower:
+            return 'RTG'
+        return 'Others'
+        
+    df_input['Program_Mapped'] = df_input[col_prog].apply(map_program)
     df_input['Is_Athlete'] = df_input[col_role].str.contains('Athlete', case=False, na=False)
     df_input['Is_Coach'] = df_input[col_role].str.contains('Coach', case=False, na=False)
     
