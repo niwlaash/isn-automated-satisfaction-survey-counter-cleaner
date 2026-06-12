@@ -26,9 +26,9 @@ def process_survey():
 
     # Columns requested in instruction2.md.resolve
     cols = [
-        'Sport', 'PK Done', 'Podium Done', 'RTG Done', 'Sukan Berfasa Done', 
+        'Sport', 'PK Done', 'Podium Done', 'RTG Done', 'Sukan Berfasa Done', 'Others Done',
         'Total Athletes Responded', 'PK Coach', 'Podium Coach', 'RTG Coach', 
-        'Sukan Berfasa Coach', 'Total Coaches Responded', 'TOTAL RESPONDENT'
+        'Sukan Berfasa Coach', 'Others Coach', 'Total Coaches Responded', 'TOTAL RESPONDENT'
     ]
 
     # 1. Read Sports List from Instructions
@@ -136,7 +136,7 @@ def process_survey():
         assigned_indices.update(matches.index.tolist())
 
         counts = {'Sport': sport_str}
-        for prog in ['PK', 'Podium', 'RTG', 'Sukan Berfasa']:
+        for prog in ['PK', 'Podium', 'RTG', 'Sukan Berfasa', 'Others']:
             counts[f'{prog} Done'] = len(matches[(matches['Is_Athlete']) & (matches['Program_Mapped'] == prog)])
             counts[f'{prog} Coach'] = len(matches[(matches['Is_Coach']) & (matches['Program_Mapped'] == prog)])
         
